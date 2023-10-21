@@ -67,13 +67,13 @@ class Main {
 
     setTimeout(() => {
       this.changeBackgroundColor('white');
-    }, 250);
+    }, 500);
 
     setTimeout(() => {
       this.changeBackgroundColor(
         '#' + Math.floor(Math.random() * 16777215).toString(16)
       );
-    }, 250);
+    }, 750);
   }
 
   //method that changes the page background color
