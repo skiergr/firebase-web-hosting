@@ -1,0 +1,78 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a background color and a fun font to the entire page */
+body {
+  background-color: #f2eaea; /* Light Grayish Pink */
+  font-family: 'Comic Sans MS', cursive;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  background-color: #ff6b6b; /* Coral Red */
+}
+
+nav li {
+  margin: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #3b5998; /* Facebook Blue */
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #265397; /* Darker Facebook Blue on hover */
+}
+
+/* Style the page header */
+h1 {
+  font-size: 2rem;
+  color: #00a896; /* Ocean Green */
+  margin: 2rem;
+  text-align: center;
+  animation: rotate 60s linear infinite; /* Rotation animation at 1 RPM */
+}
+
+/* Style the paragraph */
+p {
+  font-size: 1.2rem;
+  color: #ffd700; /* Gold */
+  text-align: center;
+  margin: 1rem;
+  animation: flash 10s infinite; /* Flash animation every 10 seconds */
+}
+
+/* Define the rotation animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Define the flash animation */
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
