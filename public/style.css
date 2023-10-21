@@ -53,12 +53,9 @@ p {
   background-color: #66ff00;
 }
 
-#section3 {
-  background-color: #0066ff;
-}
-
-#counter {
+#reactionTester {
   background-color: #ff00ff;
+  cursor: pointer;
 }
 
 #count {
